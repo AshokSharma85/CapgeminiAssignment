@@ -5,15 +5,12 @@ import java.util.Scanner;
 public class Question1 {
 
 	public static void main(String[] args) {
-
+//Scanner class to take input from user
 Scanner sc=new Scanner(System.in);
+//To run while loop till we set false
 boolean b=true;
-
-try 
-{
 	while(b)
 	{ 
-	System.out.println("Enter Your Input");
 	String input=sc.next();
 	switch(input)
 	{
@@ -24,21 +21,17 @@ try
 		System.out.println("Go");
 		break;
 	case "yellow":
-		System.out.println("Go carefully");
+		System.out.println("Ready");
 	    break;
 	case "exit":
 		b=false;
-		
+		break;
+	default :
+		System.out.println("Please Enter Valid Input");	
 	}
-	sc.close();
 }
-}
-catch(Exception e)
-{
-	System.out.println("Please Enter Valid Input");
-}
-
-
+//To close the object of scanner class
+sc.close();
 	}
 
 }

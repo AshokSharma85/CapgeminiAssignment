@@ -1,7 +1,7 @@
 package lab5;
 
 import java.util.Scanner;
-
+//Custom Exception 
 class Checkstring extends Exception{
 	String message;
 	
@@ -11,6 +11,8 @@ class Checkstring extends Exception{
 	 System.err.println(message);
 	}
 }
+
+
 class Check {
 	public static void checkthis(String fName,String lName) throws Checkstring
 	{
